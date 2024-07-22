@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="zh-CN">
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  社区二手交易平台
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <title>二手交易平台</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header { background-color: #f2f2f2; padding: 10px 0; }
+        .search-container { float: right; margin-top: 8px; }
+        .search-container input[type=text] { padding: 6px; margin-top: 8px; font-size: 17px; border: none; }
+        .search-container button { float: right; padding: 6px 10px; margin-top: 8px; margin-right: 16px; background: #ddd; font-size: 17px; border: none; cursor: pointer; }
+        .search-container button:hover { background: #ccc; }
+        .navbar { overflow: hidden; background-color: #333; }
+        .navbar a { float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; }
+        .navbar a:hover { background-color: #ddd; color: black; }
+        .main-content { margin: 15px; }
+        .product { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>二手交易平台</h1>
+    <div class="search-container">
+        <input type="text" placeholder="搜索商品...">
+        <button type="submit">搜索</button>
+    </div>
+    <div style="float:right;">
+        <a href="#login">登录</a>
+        <a href="#profile">个人主页</a>
+    </div>
+</header>
+
+<div class="navbar">
+    <a href="#electronics">电子产品</a>
+    <a href="#clothing">服装</a>
+    <a href="#books">书籍</a>
+    <a href="#furniture">家具</a>
+    <!-- 更多分类链接 -->
+</div>
+
+<div class="main-content">
+    <h2>热门商品</h2>
+    <!-- 商品信息示例 -->
+    <div class="product">
+        <h3>商品名称</h3>
+        <p>描述信息...</p>
+        <p>价格: ￥100</p>
+    </div>
+    <!-- 更多商品信息 -->
+</div>
+
+<!-- 以下为登录和个人主页的占位符，实际开发中需要替换为具体内容 -->
+<div id="login">
+    <h2>登录</h2>
+    <!-- 登录表单 -->
+</div>
+
+<div id="profile">
+    <h2>个人主页</h2>
+    <!-- 个人主页内容 -->
+</div>
+
+</body>
 </html>
